@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match-match-game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/style_2.css">
+
+</head>
+<body id="body">
+    <nav>
+        <div id="infornation_field">Information</div>
+
+        <button id="buttonStart" class="button">Play</button>
+
+        <div class="timer">
+            <span>0</span>:<span>00</span>
+        </div>
+    </nav>
+
+    <div class="first_inner_container">
+
+        <div class="field_choice_level_difficulty" id="choice_level">
+            <ul>
+                <li>Please, choice game difficulty</li>
+                <li data-cells="5" data-rows="2">Low (5 * 2)</li>
+                <li data-cells="6" data-rows="3">Medium (6 * 3)</li>
+                <li data-cells="8" data-rows="3">Hight (8 * 3)</li>
+            </ul>
+        </div>
+
+        <div class="field_choice_card_shird" id="choice_skird">
+            <div>Choice a card skirt</div>
+            <div data-picture="open_season_skirt"></div>
+            <div data-picture="kung_fu_panda_skirt"></div>
+            <div data-picture="madagascar_skirt"></div>
+        </div>
+
+
+    </div>
+    <main class="flex-main_container" id="main">
+
+        <div class="second_inner_container">
+
+            <div class="rules">
+                <h1>How to play</h1><br>
+                <p>Memory is counter game where the object is to find pairts</p>
+                <p>When the game begins, all pictures are hidden</p><br>
+                <h2>To play</h2><br>
+                <ol>
+                    <li>Select two cards to try to match the pictures</li>
+                    <li>If you match the pictures you can go agein</li>
+                    <li>If you don't match it is the computer turn them </li>
+                    <li>The player that finds all pairts wins!</li>
+                    <li>Have Fun!</li>
+                </ol>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../image/background.jpg");
+    display: flex;
+}
+
+.in_nav {
+    position: absolute;
+}
+
+.first_nav_elem, .second_nav_elem {
+    position: absolute;
+    left: 65px;
+    width: 250px;
+    min-height: 50px;
+    border: 1px solid silver;
+    background-color: rgba(199,240,246,1);
+    border-radius: 5%;
+    display: none;
+}
+
+.nav_elem_show {
+    display: block;
+}
+
+.first_nav_elem li, .second_nav_elem li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid silver;
+
+}
+
+.first_nav_elem li:hover:not(:first-child), .second_nav_elem li:hover:not(:first-child), .field_choice_level_difficulty li:hover:not(:first-child), .field_choice_card_shird div:hover:not(:first-child) {
+    background-color: bisque;
+}
+
+.first_nav_elem li:nth-child(n+2), .second_nav_elem li:nth-child(n+2) {
+    display: none;
+}
+
+.second_nav_elem li:nth-child(n+2) {
+    background-image: url("../image/spritesheet_2.png");
+}
+
+.second_nav_elem li:nth-child(2) {
+    background-position: 30px;
+}
+
+.second_nav_elem li:nth-child(3) {
+    background-position: -160px;
+
+}
+
+.second_nav_elem li:nth-child(4){
+    background-position: 210px;
+
+}
+
+.second_nav_elem {
+    position: absolute;
+    left: 350px;
+}
+
+#infornation_field {
+    position: absolute;
+    left: 700px;
+    width: 250px;
+    min-height: 50px;
+    border-radius: 5%;
+    border: 1px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(199,240,246,1);
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.infornation_field_danger {
+    color: red;
+}
+
+.timer {
+    border: 3px solid silver;
+    border-radius: 10%;
+    width: 150px;
+    height: 45px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(46, 203, 112,0.6);
+}
+
+main {
+    background: url("../image/main_background.jpg") no-repeat center;
+    border: 1px solid silver;
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+.field_choice_level_difficulty {
+    width: 250px;
+    height: 200px;
+    border: 1px solid silver;
+    background-color: rgba(199,240,246,0.3);
+    border-radius: 5%;
+    margin-top: 60px;
+}
+
+.field_choice_level_difficulty ul {
+    height: inherit;
+}
+
+.field_choice_level_difficulty li {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    border-top: 1px solid silver;
+    justify-content: center;
+    align-items: center;
+}
+
+.field_choice_card_shird {
+    width: 250px;
+    height: 300px;
+    border: 1px solid silver;
+    background-color: rgba(199,240,246,0.3);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rules {
+    width: 80%;
+    height: 400px;
+    border: 1px solid silver;
+    background-color: rgba(199,240,246,0.3);
+    margin-right: 50px;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+.rules p, .rules h1, .rules h2 {
+    text-align: center;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 10%;
+    position: absolute;
+    right: 12%;
+}
+
+.hide_show {
+    display: flex;
+}
+
+.flex-main_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.first_inner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.field_choice_card_shird div {
+    display: flex;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    height: 25%;
+    background-image: url("../image/spritesheet_2.png");
+    justify-content: center;
+    align-items: center;
+}
+
+.field_choice_card_shird div:nth-child(1) {
+    background-image: none;
+}
+
+.field_choice_card_shird div:nth-child(2) {
+    background-position: 30px;
+}
+
+.field_choice_card_shird div:nth-child(3) {
+    background-position: -155px;
+}
+
+.field_choice_card_shird div:nth-child(4) {
+    background-position: 210px;
+}
+
+.second_inner_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards_style {
+    width: 10%;
+    height: 100%;
+    border-radius: 10%;
+    border: 3px solid silver;
+}
+
+.for_cards_hidden {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.open_season_skirt {
+    background: url("../image/open_season/shirt_open_season.jpg");
+    background-size: cover;
+
+}
+
+.kung_fu_panda_skirt {
+    background-image: url("../image/kung_fu_panda/shirt_kung_fu_panda.jpg");
+    background-size: cover;
+}
+
+.madagascar_skirt {
+    background-image: url("../image/madagascar/shirt_madagascar.jpg");
+    background-size: cover;
+}
+
+.rows_for_cards {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    justify-content: space-around;
+}
+
+.main_after {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.show_image {
+    display: block;
+}
+
+.field_for_winner {
+    width: 400px;
+    height: 300px;border: 2px solid silver;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 25px;
+    background: url("../image/congret.jpg" ) no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-left: 170px;
+    padding-top: 200px;
+}
+
